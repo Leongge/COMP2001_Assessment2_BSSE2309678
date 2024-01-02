@@ -11091,11 +11091,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leongsheng\\source\\repos\\COMP2001_Assessment2\\COMP2001_Assessment2\\COMP2001_Assessment2.csproj",
+      "projectUniqueName": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\COMP2001_Assessment2.csproj",
       "projectName": "COMP2001_Assessment2",
-      "projectPath": "C:\\Users\\leongsheng\\source\\repos\\COMP2001_Assessment2\\COMP2001_Assessment2\\COMP2001_Assessment2.csproj",
+      "projectPath": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\COMP2001_Assessment2.csproj",
       "packagesPath": "C:\\Users\\leongsheng\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leongsheng\\source\\repos\\COMP2001_Assessment2\\COMP2001_Assessment2\\obj\\",
+      "outputPath": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
