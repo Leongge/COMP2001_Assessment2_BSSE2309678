@@ -8,6 +8,11 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<COMP2001MAL_KChunleongContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")
     ));
+builder.Services.AddSession(options =>
+{
+    options.Cookie.Name = ".COMP2001.Session";
+    options.IdleTimeout = TimeSpan.FromSeconds(30);
+});
 
 
 var app = builder.Build();
@@ -21,6 +26,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseSession();
 app.UseStaticFiles();
 
 app.UseRouting();

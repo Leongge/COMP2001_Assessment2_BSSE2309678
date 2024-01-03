@@ -18,6 +18,11 @@ namespace COMP2001_Assessment2.Controllers
             return View();
         }
 
+        public IActionResult Profile()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace COMP2001_Assessment2.Models
 {
@@ -10,11 +11,20 @@ namespace COMP2001_Assessment2.Models
             Profiles = new HashSet<Profile>();
         }
 
+        [JsonPropertyName("userId")]
         public int UserId { get; set; }
-        public string? Username { get; set; }
-        public string? Email { get; set; }
-        public string? Password { get; set; }
-        public DateTime? RegistrationDate { get; set; }
+
+        [JsonPropertyName("username")]
+        public string Username { get; set; }
+
+        [JsonPropertyName("email")]
+        public string Email { get; set; }
+
+        [JsonPropertyName("password")]
+        public string Password { get; set; }
+
+        [JsonPropertyName("registrationDate")]
+        public DateTime RegistrationDate { get; set; }
 
         public virtual ICollection<Profile> Profiles { get; set; }
     }

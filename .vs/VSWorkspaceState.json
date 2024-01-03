@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\COMP2001_Assessment2",
+    "\\COMP2001_Assessment2\\Views",
+    "\\COMP2001_Assessment2\\Views\\Home"
   ],
-  "SelectedNode": "\\C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678",
+  "SelectedNode": "\\COMP2001_Assessment2\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

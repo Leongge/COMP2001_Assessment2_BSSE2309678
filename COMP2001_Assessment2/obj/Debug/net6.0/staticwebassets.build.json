@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "r4RO/nB4nHV6JMdAtZpELoBUJtbqbPIYvNPMcNodhMQ=",
+  "Hash": "X4SEC40td4SS2l+/e64d37Ep7nq/2RVJwVT5t5dj7HA=",
   "Source": "COMP2001_Assessment2",
   "BasePath": "_content/COMP2001_Assessment2",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\COMP2001_Assessment2.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\wwwroot\\css\\login-styles.css",
+      "SourceId": "COMP2001_Assessment2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\wwwroot\\",
+      "BasePath": "_content/COMP2001_Assessment2",
+      "RelativePath": "css/login-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login-styles.css"
     },
     {
       "Identity": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\wwwroot\\css\\site.css",
