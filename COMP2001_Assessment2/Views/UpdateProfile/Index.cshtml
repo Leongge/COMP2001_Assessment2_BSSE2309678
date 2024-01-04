@@ -1,0 +1,61 @@
+﻿@model ProfileModel
+
+@{
+    ViewData["Title"] = "Profile";
+}
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="~/css/profile-styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>User Profile</h1>
+        <div class="two-column-layout">
+            <div class="left-column">
+                <div class="form-group">
+               
+                    <img id="image" src="@Model.ImageUrl" alt="Profile Image" width="200px">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <label>@Model.Email</label>
+                </div>
+                <div class="form-group">
+                    <label for="joinDate">Join Date:</label>
+                    <label>@Model.JoinDate?.ToString("yyyy-MM-dd")</label>
+                </div>
+            </div>
+            <div class="right-column">
+                <form asp-action="Update" method="post">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="profilename" value="@Model.ProfileName">
+                    </div>
+                    <div class="form-group">
+                        <label for="aboutMe">About Me:</label>
+                        <textarea id="aboutMe" name="bio">@Model.Bio</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" id="birthday" name="birthday" value="@Model.Birthday?.ToString("yyyy-MM-dd")">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Update Profile</button>
+                    </div>
+                    <div class="form-group">
+                        <a href="/updateprofile/logout" class="logout-button">Log Out</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

@@ -89,9 +89,11 @@ namespace COMP2001_Assessment2.Controllers
                                         var userId = user.UserId;
                                         // Save the user ID in session
                                         HttpContext.Session.SetInt32("UserId", userId);
+                                        // Save the email in session
+                                        HttpContext.Session.SetString("UserEmail", email);
 
                                         // Redirect to the profile page
-                                        return RedirectToAction("Profile", "Home");
+                                        return RedirectToAction("Index", "UpdateProfile");
                                     }
                                     else
                                     {

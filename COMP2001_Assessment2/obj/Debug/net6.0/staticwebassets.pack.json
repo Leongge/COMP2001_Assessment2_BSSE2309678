@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\login-styles.css"
     },
     {
+      "Id": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\wwwroot\\css\\profile-styles.css",
+      "PackagePath": "staticwebassets\\css\\profile-styles.css"
+    },
+    {
       "Id": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

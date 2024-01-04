@@ -11,8 +11,13 @@ builder.Services.AddDbContext<COMP2001MAL_KChunleongContext>(options => options.
 builder.Services.AddSession(options =>
 {
     options.Cookie.Name = ".COMP2001.Session";
-    options.IdleTimeout = TimeSpan.FromSeconds(30);
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
 });
+builder.Services.AddHttpClient();
+builder.Services.AddControllers();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 
 var app = builder.Build();
@@ -32,6 +37,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.MapControllerRoute(
     name: "default",
