@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="profile-container">
-        <h1>User Profile</h1>
+        <h1>My Profile</h1>
         <div class="two-column-layout">
             <div class="left-column">
                 <div class="form-group">
@@ -30,6 +30,15 @@
                     <label for="joinDate">Join Date:</label>
                     <label>@Model.JoinDate?.ToString("yyyy-MM-dd")</label>
                 </div>
+                <div class="form-group">
+                    <label for="followerCount">Follower:</label>
+                    <label>@Model.FollowerCount</label>
+                </div>
+                <div class="form-group">
+                    <label for="followedCount">Followed:</label>
+                    <label>@Model.FollowedCount</label>
+                </div>
+                
             </div>
             <div class="right-column">
                 <form asp-action="Update" method="post">

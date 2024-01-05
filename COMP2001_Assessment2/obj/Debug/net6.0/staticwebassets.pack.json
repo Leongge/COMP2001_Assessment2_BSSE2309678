@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\wwwroot\\css\\user-activity-styles.css",
+      "PackagePath": "staticwebassets\\css\\user-activity-styles.css"
+    },
+    {
       "Id": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gMsCyQ+g7kT8u6sIy8lhuoO3IHacBD2znpglLk4clmo=",
+  "Hash": "lucLzbDEx2IctV65gAwEF/SXuk/yZu7g5q54sVN/mas=",
   "Source": "COMP2001_Assessment2",
   "BasePath": "_content/COMP2001_Assessment2",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\wwwroot\\css\\user-activity-styles.css",
+      "SourceId": "COMP2001_Assessment2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\wwwroot\\",
+      "BasePath": "_content/COMP2001_Assessment2",
+      "RelativePath": "css/user-activity-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\user-activity-styles.css"
     },
     {
       "Identity": "C:\\Users\\leongsheng\\Source\\Repos\\COMP2001_Assessment2_BSSE2309678\\COMP2001_Assessment2\\wwwroot\\favicon.ico",

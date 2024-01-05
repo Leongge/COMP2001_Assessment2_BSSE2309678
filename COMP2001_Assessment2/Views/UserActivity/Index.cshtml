@@ -1,0 +1,24 @@
+﻿@model List<Activity>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Activity</title>
+    <link rel="stylesheet" href="~/css/user-activity-styles.css"> 
+</head>
+<body>
+    <div class="activity-container">
+        <h1>My Activity</h1>
+        <div class="activity-list">
+            @foreach (var activity in Model)
+            {
+                <div class="activity-item">
+                    <h3>@activity.ActivityType</h3>
+                    <p>@activity.ActivityDescription</p>
+                    <p>Date: @activity.ActivityDate?.ToString("yyyy-MM-dd")"</p>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>

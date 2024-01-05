@@ -42,6 +42,12 @@ namespace COMP2001_Assessment2.Controllers
 
             // Get User personal information
             var profile = await GetProfileInfo(userId.Value);
+            // Get follower and followed count
+            var (followerCount, followedCount) = await GetFollowerFollowedCount(userId.Value);
+
+            // Update the profile model with follower and followed counts
+            profile.FollowerCount = followerCount;
+            profile.FollowedCount = followedCount;
 
 
             // pass user information to view
@@ -179,6 +185,36 @@ namespace COMP2001_Assessment2.Controllers
             var response = await client.PutAsync(apiUrl, content);
 
             return response.IsSuccessStatusCode;
+        }
+
+        private async Task<(int, int)> GetFollowerFollowedCount(int userId)
+        {
+            var apiUrl = $"https://localhost:7037/api/FollowRelationships";
+            var client = _clientFactory.CreateClient();
+
+            var response = await client.GetAsync(apiUrl);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonOptions = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true,
+                    Converters =
+                        {
+                            new JsonStringDateTimeConverter("FollowDate"),
+                        }
+                };
+                var content = await response.Content.ReadAsStringAsync();
+                var followRelationships = JsonSerializer.Deserialize<List<FollowRelationship>>(content,jsonOptions);
+                _logger.LogInformation($"FollowRelationships data: {JsonSerializer.Serialize(followRelationships)}");
+
+                int followerCount = followRelationships.Count(fr => fr.FollowerProfileId == userId);
+                int followedCount = followRelationships.Count(fr => fr.FollowedProfileId == userId);
+
+                return (followerCount, followedCount);
+            }
+
+            return (0, 0); 
         }
         public IActionResult Logout()
         {
