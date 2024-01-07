@@ -4,8 +4,9 @@
     "\\COMP2001_Assessment2",
     "\\COMP2001_Assessment2\\Controllers",
     "\\COMP2001_Assessment2\\Views",
-    "\\COMP2001_Assessment2\\Views\\Home"
+    "\\COMP2001_Assessment2\\Views\\Home",
+    "\\COMP2001_Assessment2\\Views\\UpdateProfile"
   ],
-  "SelectedNode": "\\COMP2001_Assessment2.sln",
+  "SelectedNode": "\\COMP2001_Assessment2\\Controllers\\UpdateProfile.cs",
   "PreviewInSolutionExplorer": false
 }

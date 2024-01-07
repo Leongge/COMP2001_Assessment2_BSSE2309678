@@ -1,0 +1,27 @@
+﻿/* user-activity-styles.css */
+
+.activity-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.activity-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+    .activity-item h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .activity-item p {
+        margin-bottom: 8px;
+    }
+
+        .activity-item p:last-child {
+            margin-bottom: 0;
+        }

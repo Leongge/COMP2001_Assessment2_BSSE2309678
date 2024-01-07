@@ -1,0 +1,72 @@
+﻿/* profile-styles.css */
+
+.profile-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: start;
+}
+
+.two-column-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.left-column {
+    flex: 1;
+    
+}
+
+.right-column {
+    flex: 1;
+    
+}
+
+.form-group{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Your existing form-group and input/button styles... */
+
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+.logout-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+    .logout-button:hover {
+        background-color: darkred;
+    }
